@@ -1,7 +1,7 @@
 class rud_drlaptop:  # main class named DrLaptop
-    data_customer_rep = {'sudha': 'sudha@1'}  # dictionary for customer representive
-    data_hardware_eng = {'sahadevan': 'saha@1'}  # dictionary for hardwork engineer
-    data_admin = {'rudhra': 'rudhra15'}  # dictionary for admin
+    data_customer_rep = {'sudha': 'sudha@1'}  # dictionary for customer representive ----- Use this as credentials for the first time
+    data_hardware_eng = {'sahadevan': 'saha@1'}  # dictionary for hardwork engineer ----- Use this as credentials for the first time
+    data_admin = {'rudhra': 'rudhra15'}  # dictionary for admin ----- Use this as credentials for the first time
     data_customer = {}# dictionary for customer
     data_assaignment={'sahadevan':[]}#dictinary for assigining hareware engineer:complints
     data_complaints_hardware={}#dictionary for assigining complait:hardware engineer
