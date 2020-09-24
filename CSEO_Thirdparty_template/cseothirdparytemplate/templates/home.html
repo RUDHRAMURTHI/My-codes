@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <h1>CSEO ThirdPary Vendor Excel Template Creator</h1>
+    <div class="main-content">
+        <p>This site will help you to create third party Excel template, without doing all the hard work of copy pasting in Excel</p>
+        <p>If You are new to this site please check out the Instruction page at the Top </p>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{url_for('static', filename='automation.png')}}" class="img-rounded" alt="" width="200" height="200">
+            </div>
+            <div class="col-sm-8">
+                <div class="content-section">
+                    <form method="POST" action="" enctype="multipart/form-data">
+                        {{form.hidden_tag()}}
+                        <feildset class="form-group">
+                            <legend class="border-bottom mb-4"><h2>Please Fill Your Information</h2></legend>
+                            <div class="form-group">
+                                {{form.app_name.label(class="form-control-label")}}
+
+                                {% if form.app_name.errors %}
+                                    {{form.app_name(class="form-control form-control-lg is-invalid")}}
+                                    <div role="alert" class="invalid-feedback">
+                                        {% for error in form.app_name.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{form.app_name(class="form-control form-control-lg from-border")}}
+                                {% endif %}
+
+                            </div>
+                            <div class="form-group">
+                                {{form.file.label(role="presentation")}}
+                                {% if form.file.errors %}
+                                        </br>
+                                        {% for error in form.file.errors %}
+                                            <span role="alert" class="text-danger">{{ error }}</span></br>
+                                        {% endfor %}
+                                {% endif %}
+                                {{form.file(class="form-control-file")}}
+
+                            </div>
+
+                        </feildset>
+                        <div class="form-group">
+                            {{form.submit(class="btn btn btn-dark")}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

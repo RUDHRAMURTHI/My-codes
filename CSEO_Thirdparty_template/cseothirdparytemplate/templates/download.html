@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>CSEO ThirdPary Vendor Excel Template Creator</h1>
+    <div class="main-content">
+        <p>This site will help you to create third party Excel template, without doing all the hard work of copy pasting in Excel</p>
+        <p>If You are new to this site please check out the Instruction page at the Top </p>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{url_for('static', filename='automation.png')}}" class="img-rounded" alt="" width="200" height="200">
+            </div>
+            <div class="col-sm-8">
+                <div class="content-section">
+                    <form method="POST" action="{{url_for('download', app_name=app_name)}}" enctype="multipart/form-data">
+                        {{form.hidden_tag()}}
+                        <feildset class="form-group">
+                            <legend class="border-bottom mb-4"><h2>Please download your {{app_name}} app template</h2></legend>
+
+                            <div class="form-group">
+                                {{form.submit(class="btn btn btn-dark")}}
+                            </div>
+
+                        </feildset>
+
+                    </form>
+                    <small class="ml-2">
+                        <a href="{{url_for('home')}}" style="color:#000066;">Create template for another app?</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

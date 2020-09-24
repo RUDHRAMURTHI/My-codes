@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+  font-size: 30px;
+}
+
+h2 {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+.main-content {
+  border-style: solid;
+  border-width: 2px;
+  margin: 5% 5% 5% 5%;
+  font-size: 16px;
+}
+
+p {
+  text-align: center;
+  color: green
+}
+
+img{
+  padding: 10px 10px 10px 10px;
+
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+ol {
+  color: green;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.from-border {
+  border: 2px solid;
+}

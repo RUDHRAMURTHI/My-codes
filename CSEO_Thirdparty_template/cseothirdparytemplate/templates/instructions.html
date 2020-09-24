@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <h1>CSEO ThirdPary Vendor Excel Template Creator</h1>
+    <div class="main-content">
+        <h2> Before Uploading:</h2>
+        <ol>
+          <li>
+              Download and install the "Azure DevOps Office® Integration 2019" form "Other Tools and Frameworks" section in
+              <a target="_blank" style="color:#000066; text-decoration: underline" aria-label="visual studio downloads. Opens in new tab" href="https://visualstudio.microsoft.com/downloads/">visual studio downloads</a>
+          </li>
+          <li>
+              From Azure Devops, query the required Application.
+              Your query should contain only columns: "ID", "Title", "Repro Steps", "Severity", "State", "Tags"
+          </li>
+          <li>Your query should be sorted by "Severity" in Descending order. Now save your query with appropriate name.</li>
+          <li>Now form more options(...) select 'Export in Excel' option, excel will be automatically opened.
+              The excel now will be in Unusable format so ignore the first column in excel and copy all the rest and paste it in new excel sheet.
+          </li>
+          <li>Now your excel is ready to upload</li>
+        </ol>
+        <h2> After Downloading:</h2>
+        <ol>
+          <li>
+              The Downloaded excel will not have the required styles, You have to make the necessary styling for the columns which contains links.
+          </li>
+          <li>
+              The columns which contains links are: "ID", "MAS Reference" and "WCAG Reference".
+          </li>
+          <li>As this application accuracy depends mainly on the bugs alignment that where logged in Azure Devops,
+              I suggest careful review of spaces in repro steps of the bugs before uploading template and after downloading template, quickly review everything is copied correctly or not.
+          </li>
+          <li>
+              However don't worry I will be providing a extra column in the downloaded excel which contains both MAS reference and WCAG Reference,
+              for review purpose, if anything is missed you can copy paste from by using this column without going to the bug in Azure Devops.
+          </li>
+          <li>If you make mistake in alignment while logging the bugs it will reflect here so do quality bug logging and Happy using this Application!</li>
+        </ol>
+    </div>
+
+{% endblock content %}
