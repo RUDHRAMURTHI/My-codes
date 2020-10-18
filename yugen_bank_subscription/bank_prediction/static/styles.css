@@ -1,0 +1,40 @@
+h1 {
+  color: #ccffff;
+  font-size: 30px;
+}
+
+h2 {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #002080;
+}
+
+
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+.main-content {
+  border-style: solid;
+  border-width: 2px;
+  margin: 5% 5% 5% 5%;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+
+
+.site-header .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+
+.from-border {
+  border: 2px solid;
+}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="main-content">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 style="color:blue;font-size:20;text-align: center;"><b>Results for the Customer</b></h1>
+                {% if prediction == 1%}
+                    <h2 style="color:blue;">Client subscribed a term deposit</h2>
+                {% elif prediction == 0%}
+                    <h2 style="color:red;">Client Not subscribed a term deposit</h2>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
